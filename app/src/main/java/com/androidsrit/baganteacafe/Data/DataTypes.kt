@@ -1,6 +1,7 @@
 package com.androidsrit.baganteacafe.Data
 
 import io.appwrite.services.Databases
+import kotlinx.serialization.Serializable
 
 data class Coffee(
     val id: String,
@@ -14,3 +15,4 @@ fun Map<String, Any>.toCoffee() =
         name = this["name"] as String,
         pictureUrl = this["pictureUrl"] as String
     )
+
